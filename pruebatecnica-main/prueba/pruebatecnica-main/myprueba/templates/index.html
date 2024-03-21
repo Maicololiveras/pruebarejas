@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Cerca de Acero</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('/static/images/fondo.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 1fr; /* Una columna por defecto */
+        }
+        
+        .column-left,
+        .column-right {
+            padding: 90px;
+            box-sizing: border-box;
+        }
+        
+        .column-left {
+            order: 1; /* Cambiar el orden en dispositivos móviles */
+        }
+        
+        .column-right {
+            order: 2; /* Cambiar el orden en dispositivos móviles */
+        }
+        
+        @media screen and (min-width: 768px) {
+            /* Ajustar el diseño para dispositivos con un ancho mínimo de 768px */
+            .container {
+                grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+            }
+        }
+    </style>
+
+
+    <h1>Cálculo de Cerca de Acero</h1>
+    <div class="container">
+        <!-- Columna izquierda: Formulario de entrada -->
+        <div class="column-left">
+            <form action="/" method="post">
+                <label for="largo_total">Largo total de la cerca:</label>
+                <input type="number" id="largo_total" name="largo_total" step="0.01" required><br><br>
+                <label for="altura">Altura de la cerca:</label>
+                <select name="altura" id="altura" required>
+                    <option value="1">1.03m</option>
+                    <option value="2">1.53m</option>
+                    <option value="3">2.03m</option>
+                </select><br><br>
+                <label for="color">Color de la cerca:</label>
+                <select name="color" id="color" required>
+                    <option value="0">Sin pintura</option>
+                    <option value="1">Blanca</option>
+                    <option value="2">Negra</option>
+                    <option value="3">Verde</option>
+                </select><br><br>
+                <label for="confirmado">Confirmar pedido:</label>
+                <input type="checkbox" id="confirmado" name="confirmado" value="confirmado"><br><br>
+                <input type="submit" value="Calcular">
+            </form>
+            <div class="boton"><a href="{{ url_for('ver_pedidos_confirmados') }}" target="_blank">Ver pedidos confirmados</a></div>
+        </div>
+
+        <!-- Columna derecha: Resultados y diseño de rejas -->
+        <div class="column-right">
+            {% if img_bytes %}
+            <h2>Diseño de las rejas:</h2>
+            <!-- Utiliza la etiqueta <img> con el atributo src configurado con la imagen en base64 -->
+            <img src="data:image/png;base64,{{ img_bytes }}" alt="Diseño de las rejas">
+            {% endif %}
+
+            <!-- Mostrar resultados -->
+            {% if cantidad_rejas %}
+            <h2>Resultados:</h2>
+            <p>Cantidad de rejas: {{ cantidad_rejas }}</p>
+            <p>Cantidad de postes: {{ cantidad_postes }}</p>
+            <p>Cantidad de tornillos: {{ cantidad_tornillos }}</p>
+            <p>Cantidad de fijadores: {{ cantidad_fijadores }}</p>
+            <p>Color de la pintura: {{ color_pintura }}</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

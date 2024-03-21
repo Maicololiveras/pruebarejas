@@ -1,0 +1,16 @@
+Fecha de confirmación: 2024-03-18 08:13:28, Largo total: 50.0, Altura: 1.53, Color: negra
+Fecha de confirmación: 2024-03-18 08:14:26, Largo total: 50.0, Altura: 1.53, Color: negra
+Fecha de confirmación: 2024-03-18 09:32:26, Largo total: 45.0, Altura: 2.03, Color: blanca
+Fecha de confirmación: 2024-03-18 09:32:33, Largo total: 45.0, Altura: 2.03, Color: blanca
+Fecha de confirmación: 2024-03-18 09:32:33, Largo total: 45.0, Altura: 2.03, Color: blanca
+Fecha de confirmación: 2024-03-18 09:32:37, Largo total: 45.0, Altura: 2.03, Color: blanca
+Fecha de confirmación: 2024-03-18 09:32:37, Largo total: 45.0, Altura: 2.03, Color: blanca
+Fecha de confirmación: 2024-03-18 09:32:37, Largo total: 45.0, Altura: 2.03, Color: blanca
+Fecha de confirmación: 2024-03-18 09:32:37, Largo total: 45.0, Altura: 2.03, Color: blanca
+Fecha de confirmación: 2024-03-18 09:32:38, Largo total: 45.0, Altura: 2.03, Color: blanca
+Fecha de confirmación: 2024-03-18 09:32:41, Largo total: 45.0, Altura: 2.03, Color: blanca
+Fecha de confirmación: 2024-03-18 09:35:41, Largo total: 50.0, Altura: 1.53, Color: blanca
+Fecha de confirmación: 2024-03-18 09:35:42, Largo total: 50.0, Altura: 1.53, Color: blanca
+Fecha de confirmación: 2024-03-18 09:35:42, Largo total: 50.0, Altura: 1.53, Color: blanca
+Fecha de confirmación: 2024-03-18 09:36:09, Largo total: 50.0, Altura: 1.53, Color: blanca
+Fecha de confirmación: 2024-03-18 09:36:29, Largo total: 70.0, Altura: 1.03, Color: sin pintura
